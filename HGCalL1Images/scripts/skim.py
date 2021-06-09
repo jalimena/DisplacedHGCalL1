@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import uproot
+import uproot3 as uproot
 import numpy as np
 from root_numpy import array2root
 import os

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import uproot
+import uproot3 as uproot
 import numpy as np
 import os
 from argparse import ArgumentParser

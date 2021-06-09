@@ -2,7 +2,7 @@
 
 from DeepJetCore.TrainData import TrainData, fileTimeOut
 import numpy as np
-import uproot
+import uproot3 as uproot
 import glob
 import random
 import matplotlib.cm as cm
@@ -25,7 +25,7 @@ def readFileList(path):
     return files
 
 
-if "cmg-gpu1080" in os.getenv("HOSTNAME"):
+if False and "cmg-gpu1080" in os.getenv("HOSTNAME"):
     TrainData_calo_pufiles_test=readFileList("/home/scratch/jkiesele/minbias_test/files.txt")
     TrainData_calo_pufiles_train=readFileList("/data/hgcal-0/store/jkiesele/Displ_Calo/minbias/minbias_train/files.txt")
 else:
@@ -262,7 +262,7 @@ class TrainData_calo(TrainData):
         
         array2root(out, outfilename+".root", 'tree')
         
-        
+
 
 
 class TrainData_calo_val(TrainData_calo):

@@ -1,6 +1,6 @@
 
 import numpy as np
-import uproot
+import uproot3 as uproot
 import glob
 
 def tonumpy(inarr):
