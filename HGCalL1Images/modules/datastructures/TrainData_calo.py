@@ -261,7 +261,7 @@ class TrainData_calo(TrainData):
                                              names=names)
         
         array2root(out, outfilename+".root", 'tree')
-        
+        return outfilename+".root"        
 
 
 
