@@ -1,0 +1,6 @@
+
+1) Download samples as numpy arrays, give labels to each layer
+2) read through the numpy arrays and plot them
+
+
+The structure of Download file must change depending on the model. Could be improved probably. 

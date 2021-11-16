@@ -1,0 +1,20 @@
+steps for quantizing:
+
+Wrappers:
+1) Take trained model
+2) apply quantize wrappers
+3) train for a few more epochs
+
+Disadvantage of this method is you must leave the wrappers on, and hls does not know what to do with this.
+Especially when you quantize the output layer.
+
+
+
+QKeras:
+1) when you first create the model, use QKeras layers
+advantage is hls can handle this, though i ran into a few issues.
+
+
+
+
+

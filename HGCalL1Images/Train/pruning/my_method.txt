@@ -1,0 +1,18 @@
+To prune a model,
+
+1) take your trained model
+
+2) put pruning wrappers on the layers
+
+3) "fine tune" by training for a few more epochs
+
+4) remove pruning wrapper if you want to use with hls. 
+
+
+example is in the "pruning_example.py"
+
+
+See "The lottery ticket hypothesis" to improve this technique. I never tried it. You could also try pruning to higher sparsities.
+
+Here is a paper about it:
+https://arxiv.org/abs/1803.03635
